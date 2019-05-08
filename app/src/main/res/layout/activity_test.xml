@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="1dp"
+            android:id="@+id/quiz_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/option1"
+                    android:padding="10dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:text="Test1"
+                    android:onClick="onclick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/option2"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:text="Test2"
+                    android:onClick="onclick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/option3"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:text="Test3"
+                    android:onClick="onclick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/option4"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:text="Test4"
+                    android:onClick="onclick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAns"
+                android:layout_margin="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvAns"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
