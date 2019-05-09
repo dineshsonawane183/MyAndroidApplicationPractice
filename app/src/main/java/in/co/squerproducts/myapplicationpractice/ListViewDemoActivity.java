@@ -18,7 +18,7 @@ public class ListViewDemoActivity extends AppCompatActivity {
     private String[] values={
             "Simple Calculator" ,"Alert Dialogue" ,"Register Activity" ,"Web view Demo" ,
             "Custom List View ","Expandable List View Demo" ,"Time Picker Demo" ,"Autocomplete TextView Demo"
-            ,"Seekbar Demo", " Check box Demo","Spinner Demo","Fragment Example"
+            ,"Seekbar Demo", " Check box Demo","Spinner Demo","Fragment Example","RecycleView Demo"
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +72,9 @@ public class ListViewDemoActivity extends AppCompatActivity {
                         break;
                     case 11:
                         startActivity(new Intent(ListViewDemoActivity.this, MainFragmentActivity.class));
+                        break;
+                    case 12:
+                        startActivity(new Intent(ListViewDemoActivity.this, RecycleViewDemoActivity.class));
                         break;
                 }
 
